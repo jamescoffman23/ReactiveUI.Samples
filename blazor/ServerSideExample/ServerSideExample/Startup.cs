@@ -24,7 +24,7 @@ namespace ServerSideExample
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
-            services.AddSingleton<FetchDataViewModel>();
+            services.AddScoped<FetchDataViewModel>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
